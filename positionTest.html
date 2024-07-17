@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width : 100px;
+            height : 100px;
+            background-color: red;
+            margin : 5px
+        }
+        div#box1{
+            position : relative; /*상대좌표*/
+            top : 50px;
+            left : 50px;
+            background-color: blue;
+            z-index: 999; /*클수록 앞에 올라옴*/
+        }
+        div#box2{
+            position : absolute;
+            top : 100px;
+            left : 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello</h1>
+    <div id="box1"></div>
+    <div id="box2"></div>
+</body>
+</html>
